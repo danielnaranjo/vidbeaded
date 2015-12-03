@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the webApp
  */
-app.controller('MainCtrl', function ($scope, $http, CONFIG, toastr) {
+app.controller('MainCtrl', function ($scope, $http, CONFIG) {
    
    $scope.getData = function() {
 		$http({
@@ -23,10 +23,7 @@ app.controller('MainCtrl', function ($scope, $http, CONFIG, toastr) {
             $scope.feed = data.response;
         })
         .error(function(){
-			toaster.pop('error', '', 'We can not connect to server', 3000, 'trustedHtml');
-			
-
-			console.log('Sample', $scope.feed);
+			console.log('Error');
         });
 	};
 });

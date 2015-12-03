@@ -17,9 +17,7 @@ var app = angular.module('webApp', [
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'toastr',
-    'angular-loading-bar',
-    'ui.bootstrap'
+    'angular-loading-bar'
   ]);
 
   app.constant('CONFIG', { 

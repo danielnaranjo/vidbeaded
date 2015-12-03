@@ -6,14 +6,7 @@
   </div>
   <div class="row" ng-init="getData()">
     <div ng-repeat="vid in feed track by $index | limitTo:9" class="col-md-3 col-sm-3 col-xs-12 vidbeadbox portfolio-modal">
-      <a href="{{vid.vidbeads[0].video_file}}" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
-                    </a>
+      <a ng-href="{{vid.vidbeads[0].video_file}}">
         <div class="caption">
           <div class="caption-content">
             <h4>{{vid.title}}</h4>
@@ -36,7 +29,7 @@
             </ul>
           </div>
         </div>
-        <img src="{{vid.preview_file}}" alt="Vidbead" class="img-responsive">
+        <img ng-src="{{vid.preview_file}}" alt="Vidbead" class="img-responsive">
       </a>
     </div>
   </div>
