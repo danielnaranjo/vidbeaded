@@ -1,0 +1,144 @@
+<!doctype html>
+<html ng-app="webApp" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vidbead - Answer Videos with Videos</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+    <meta property="og:url" content="http://vidbead.com" />
+    <meta property="og:image" content="http://vidbead.com/images/logo-share.png" />
+    <meta property="og:title" content="Vidbead - Answer videos with videos" />
+    <meta property="og:description" content="Vidbead is a free app that allows you to communicate with who you are interested in in an audiovisual way. Begin with your video and invite others to their own clips to yours. Vidbead will join the clips, putting them one after the other forming an amazing new movie." />
+
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <link rel="stylesheet" href="bower_components/AngularJS-Toaster/toaster.css" />
+    <!-- endbower -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- cdn's -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <div class="row container">
+        <div class="col-md-6 col-sm-9 col-xs-12">
+          <a href="/#!">
+            <img class="logo img-responsive" src="http://www.vidbead.com/images/logotype-vidbead.png" alt="logo"/>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div ng-view=""></div>
+    </div>
+
+    <div class="footer">
+      <div class="row container">
+        <div class="col-md-6">
+          <h4>Vidbead</h4>
+          <p>
+            Vidbead is a free app that allows you to communicate with who you are interested in in an audiovisual way.
+          </p>
+          <p>
+            Begin recording your video and invite others to add their own clips to yours. Vidbead will join those vidbeads, putting them one after the other forming an amazing vidthread.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Can't submit my vidbead</a></li>
+            <li><a href="#">Oh no! I forgot my pass!?</a></li>
+            <li><a href="#">My iPhone get lost, Do I lost my video?</a></li>
+            <li><a href="#">I dont speak English, Are you support German?</a></li>
+            <li><a href="#">Weird issues</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4>Be Social</h4>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-1x fa-facebook-square"></i> vidbead
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-1x fa-instagram"></i> vidbead
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-1x fa-twitter-square"></i> vidbead
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row container" style="margin-top:50px;">
+        <div class="col-md-9 col-sm-6 col-xs-12">
+          <p>&copy 2015 vidbead. All rights reserved.</p>
+        </div>
+        <div class="col-md-3 col-sm-6 hidden-xs">
+          <p>
+            Crafted by     
+            <a href="http://danielnaranjo.info" target="_blank">
+              Daniel Naranjo
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/AngularJS-Toaster/toaster.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,43 @@
+<section id="vidbeadgrid" class="container">
+  <div class="row">
+     <div class="col-md-3 col-sm-3 col-xs-12 vidbeadbox" ng-hide="feed">
+       <h4>Loading data..</h4>
+     </div>
+  </div>
+  <div class="row" ng-init="getData()">
+    <div ng-repeat="vid in feed track by $index | limitTo:9" class="col-md-3 col-sm-3 col-xs-12 vidbeadbox portfolio-modal">
+      <a href="{{vid.vidbeads[0].video_file}}" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+                    </a>
+        <div class="caption">
+          <div class="caption-content">
+            <h4>{{vid.title}}</h4>
+            <ul>
+              <li ng-show="vid.like_count">
+                <i class="fa fa-heart fa-1x"></i>
+              </li>
+              <li ng-show="vid.vidbead_count">
+                <i class="fa fa-thumbs-o-up fa-1x"></i>
+              </li>
+              <li ng-show="vid.is_open">
+                <i class="fa fa-check fa-1x"></i>
+              </li>
+              <li ng-show="vid.is_closed">
+                <i class="fa fa-slash fa-1x"></i>
+              </li>
+              <li ng-show="vid.visibility">
+                <i class="fa fa-eye fa-1x"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img src="{{vid.preview_file}}" alt="Vidbead" class="img-responsive">
+      </a>
+    </div>
+  </div>
+</section>
