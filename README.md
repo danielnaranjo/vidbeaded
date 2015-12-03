@@ -1,12 +1,5 @@
-# web
+# vidbeaded is a demo assigment for [The Amalgama](http://theamalgama.com/?utm_source=vidbeaded&utm_campaing=assigments&utm_medium=referral)
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.1.
+Crafted by [Daniel Naranjo](http://danielnaranjo.info/?utm_source=vidbeaded&utm_campaing=assigments&utm_medium=referral)
 
-## Build & development
-
-Run `grunt` for building and `grunt serve` for preview.
-
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
+November 2015 - BsAs
