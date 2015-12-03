@@ -12,8 +12,8 @@ app.controller('MainCtrl', function ($scope, $http, CONFIG) {
    $scope.getData = function() {
 		$http({
 			method:'GET',
-			// url:CONFIG.VBURL,
-			url:'scripts/sample.json',
+			url:CONFIG.VBURL,
+			// url:'scripts/sample.json',
 			data:'',
 			headers:{
 				'Authorization': 'CONFIG.FAKE'
