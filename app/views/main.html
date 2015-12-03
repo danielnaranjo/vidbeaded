@@ -6,7 +6,7 @@
   </div>
   <div class="row" ng-init="getData()">
     <div ng-repeat="vid in feed track by $index | limitTo:9" class="col-md-3 col-sm-3 col-xs-12 vidbeadbox caption-style-2">
-      <a ng-href="{{vid.vidbeads[0].video_file}}">
+      <a ng-href="{{vid.vidbeads.video_file}}">
         <div class="caption">
           <div class="blur"></div>
           <div class="caption-text">
